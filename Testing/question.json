@@ -1,0 +1,2062 @@
+[
+  {
+    "id": -15,
+    "topic": "What is MERN Stack?"
+  },
+  {
+    "id": -14,
+    "topic": "Why is MERN Stack Popular?"
+  },
+  {
+    "id": -13,
+    "topic": "What Does MERN Stand For?"
+  },
+  {
+    "id": -12,
+    "topic": "Why Should Beginners Learn MERN Stack?"
+  },
+  {
+    "id": -11,
+    "topic": "Who Uses MERN Stack in Real Companies?"
+  },
+  {
+    "id": -10,
+    "topic": "Why Do Startups Prefer MERN Stack?"
+  },
+  {
+    "id": -9,
+    "topic": "What Problems Does MERN Stack Solve?"
+  },
+  {
+    "id": -8,
+    "topic": "How Does MERN Stack Work Together?"
+  },
+  {
+    "id": -7,
+    "topic": "What Makes MERN Different From Other Tech Stacks?"
+  },
+  {
+    "id": -6,
+    "topic": "Why Use JavaScript Across the Entire MERN Stack?"
+  },
+  {
+    "id": -5,
+    "topic": "MERN vs MEAN: Which One Should You Learn?"
+  },
+  {
+    "id": -4,
+    "topic": "MERN vs Django: Which Is Better for Startups?"
+  },
+  {
+    "id": -3,
+    "topic": "MERN vs Spring Boot: Which Has Better Career Opportunities?"
+  },
+  {
+    "id": -2,
+    "topic": "Can MERN Stack Get You a Job in 2026?"
+  },
+  {
+    "id": -1,
+    "topic": "What Types of Applications Can Be Built Using MERN Stack?"
+  },
+  {
+    "id": 1,
+    "topic": "What is JavaScript?"
+  },
+  {
+    "id": 2,
+    "topic": "Why JavaScript is Important?"
+  },
+  {
+    "id": 3,
+    "topic": "How JavaScript Works in Browsers?"
+  },
+  {
+    "id": 4,
+    "topic": "What is ECMAScript?"
+  },
+  {
+    "id": 5,
+    "topic": "var vs let vs const"
+  },
+  {
+    "id": 6,
+    "topic": "Primitive vs Reference Data Types"
+  },
+  {
+    "id": 7,
+    "topic": "What are Variables?"
+  },
+  {
+    "id": 8,
+    "topic": "What are Data Types?"
+  },
+  {
+    "id": 9,
+    "topic": "What are Operators?"
+  },
+  {
+    "id": 10,
+    "topic": "What are Functions?"
+  },
+  {
+    "id": 11,
+    "topic": "Function Declaration vs Function Expression"
+  },
+  {
+    "id": 12,
+    "topic": "What are Arrow Functions?"
+  },
+  {
+    "id": 13,
+    "topic": "What are Arrays?"
+  },
+  {
+    "id": 14,
+    "topic": "What are Objects?"
+  },
+  {
+    "id": 15,
+    "topic": "What are Loops?"
+  },
+  {
+    "id": 16,
+    "topic": "for vs forEach"
+  },
+  {
+    "id": 17,
+    "topic": "What are Conditional Statements?"
+  },
+  {
+    "id": 18,
+    "topic": "What is Scope?"
+  },
+  {
+    "id": 19,
+    "topic": "Global Scope vs Local Scope"
+  },
+  {
+    "id": 20,
+    "topic": "What is Hoisting?"
+  },
+  {
+    "id": 21,
+    "topic": "What is Temporal Dead Zone?"
+  },
+  {
+    "id": 22,
+    "topic": "What is Closure?"
+  },
+  {
+    "id": 23,
+    "topic": "What is Lexical Scope?"
+  },
+  {
+    "id": 24,
+    "topic": "What is Callback Function?"
+  },
+  {
+    "id": 25,
+    "topic": "What is Callback Hell?"
+  },
+  {
+    "id": 26,
+    "topic": "What is Promise?"
+  },
+  {
+    "id": 27,
+    "topic": "Promise Chaining Explained"
+  },
+  {
+    "id": 28,
+    "topic": "Promise.all vs Promise.allSettled"
+  },
+  {
+    "id": 29,
+    "topic": "What is Async Await?"
+  },
+  {
+    "id": 30,
+    "topic": "What is Event Loop?"
+  },
+  {
+    "id": 31,
+    "topic": "What is Call Stack?"
+  },
+  {
+    "id": 32,
+    "topic": "What is Execution Context?"
+  },
+  {
+    "id": 33,
+    "topic": "What is Event Delegation?"
+  },
+  {
+    "id": 34,
+    "topic": "What is Debouncing?"
+  },
+  {
+    "id": 35,
+    "topic": "What is Throttling?"
+  },
+  {
+    "id": 36,
+    "topic": "What is Currying?"
+  },
+  {
+    "id": 37,
+    "topic": "What is Memoization?"
+  },
+  {
+    "id": 38,
+    "topic": "What is Prototype?"
+  },
+  {
+    "id": 39,
+    "topic": "What is Prototype Chain?"
+  },
+  {
+    "id": 40,
+    "topic": "What is this Keyword?"
+  },
+  {
+    "id": 41,
+    "topic": "call vs apply vs bind"
+  },
+  {
+    "id": 42,
+    "topic": "What is Destructuring?"
+  },
+  {
+    "id": 43,
+    "topic": "What is Spread Operator?"
+  },
+  {
+    "id": 44,
+    "topic": "What is Rest Operator?"
+  },
+  {
+    "id": 45,
+    "topic": "What is Optional Chaining?"
+  },
+  {
+    "id": 46,
+    "topic": "What is Nullish Coalescing?"
+  },
+  {
+    "id": 47,
+    "topic": "What is Local Storage?"
+  },
+  {
+    "id": 48,
+    "topic": "What is Session Storage?"
+  },
+  {
+    "id": 49,
+    "topic": "What is JSON?"
+  },
+  {
+    "id": 50,
+    "topic": "JSON.parse vs JSON.stringify"
+  },
+  {
+    "id": 51,
+    "topic": "What is Fetch API?"
+  },
+  {
+    "id": 52,
+    "topic": "What is AJAX?"
+  },
+  {
+    "id": 53,
+    "topic": "What is CORS?"
+  },
+  {
+    "id": 54,
+    "topic": "What is Strict Mode?"
+  },
+  {
+    "id": 55,
+    "topic": "What are ES6 Features?"
+  },
+  {
+    "id": 56,
+    "topic": "What are Modules?"
+  },
+  {
+    "id": 57,
+    "topic": "CommonJS vs ES Modules"
+  },
+  {
+    "id": 58,
+    "topic": "What is Babel?"
+  },
+  {
+    "id": 59,
+    "topic": "What is Webpack?"
+  },
+  {
+    "id": 60,
+    "topic": "What is Vite?"
+  },
+  {
+    "id": 61,
+    "topic": "What is React?"
+  },
+  {
+    "id": 62,
+    "topic": "Why React is Popular?"
+  },
+  {
+    "id": 63,
+    "topic": "What is JSX?"
+  },
+  {
+    "id": 64,
+    "topic": "What are Components?"
+  },
+  {
+    "id": 65,
+    "topic": "Functional vs Class Components"
+  },
+  {
+    "id": 66,
+    "topic": "What are Props?"
+  },
+  {
+    "id": 67,
+    "topic": "What is State?"
+  },
+  {
+    "id": 68,
+    "topic": "What is Virtual DOM?"
+  },
+  {
+    "id": 69,
+    "topic": "What is Reconciliation?"
+  },
+  {
+    "id": 70,
+    "topic": "How React Rendering Works?"
+  },
+  {
+    "id": 71,
+    "topic": "What is useState?"
+  },
+  {
+    "id": 72,
+    "topic": "What is useEffect?"
+  },
+  {
+    "id": 73,
+    "topic": "Common useEffect Mistakes"
+  },
+  {
+    "id": 74,
+    "topic": "What is useRef?"
+  },
+  {
+    "id": 75,
+    "topic": "What is useMemo?"
+  },
+  {
+    "id": 76,
+    "topic": "What is useCallback?"
+  },
+  {
+    "id": 77,
+    "topic": "What is Custom Hook?"
+  },
+  {
+    "id": 78,
+    "topic": "What is Context API?"
+  },
+  {
+    "id": 79,
+    "topic": "Context API vs Redux"
+  },
+  {
+    "id": 80,
+    "topic": "What is Redux?"
+  },
+  {
+    "id": 81,
+    "topic": "What is Redux Toolkit?"
+  },
+  {
+    "id": 82,
+    "topic": "What is React Router?"
+  },
+  {
+    "id": 83,
+    "topic": "What is Dynamic Routing?"
+  },
+  {
+    "id": 84,
+    "topic": "What is Protected Routing?"
+  },
+  {
+    "id": 85,
+    "topic": "What is Lazy Loading?"
+  },
+  {
+    "id": 86,
+    "topic": "What is Code Splitting?"
+  },
+  {
+    "id": 87,
+    "topic": "What is Suspense?"
+  },
+  {
+    "id": 88,
+    "topic": "What is React.memo?"
+  },
+  {
+    "id": 89,
+    "topic": "What are Controlled Components?"
+  },
+  {
+    "id": 90,
+    "topic": "What are Uncontrolled Components?"
+  },
+  {
+    "id": 91,
+    "topic": "What is Form Handling in React?"
+  },
+  {
+    "id": 92,
+    "topic": "What is React Hook Form?"
+  },
+  {
+    "id": 93,
+    "topic": "What is Formik?"
+  },
+  {
+    "id": 94,
+    "topic": "What is Prop Drilling?"
+  },
+  {
+    "id": 95,
+    "topic": "What is Lifting State Up?"
+  },
+  {
+    "id": 96,
+    "topic": "What are Error Boundaries?"
+  },
+  {
+    "id": 97,
+    "topic": "What is React Fragment?"
+  },
+  {
+    "id": 98,
+    "topic": "What are React Portals?"
+  },
+  {
+    "id": 99,
+    "topic": "What is React Strict Mode?"
+  },
+  {
+    "id": 100,
+    "topic": "React Performance Optimization"
+  },
+  {
+    "id": 101,
+    "topic": "What is React Fiber?"
+  },
+  {
+    "id": 102,
+    "topic": "How React Fiber Works?"
+  },
+  {
+    "id": 103,
+    "topic": "What is Hydration in React?"
+  },
+  {
+    "id": 104,
+    "topic": "What is Server Side Rendering (SSR)?"
+  },
+  {
+    "id": 105,
+    "topic": "SSR vs CSR"
+  },
+  {
+    "id": 106,
+    "topic": "What is Static Site Generation (SSG)?"
+  },
+  {
+    "id": 107,
+    "topic": "What is Incremental Static Regeneration (ISR)?"
+  },
+  {
+    "id": 108,
+    "topic": "React Design Patterns"
+  },
+  {
+    "id": 109,
+    "topic": "Higher Order Components (HOC)"
+  },
+  {
+    "id": 110,
+    "topic": "Render Props Pattern"
+  },
+  {
+    "id": 111,
+    "topic": "Compound Components Pattern"
+  },
+  {
+    "id": 112,
+    "topic": "Custom Hooks Best Practices"
+  },
+  {
+    "id": 113,
+    "topic": "React Folder Structure"
+  },
+  {
+    "id": 114,
+    "topic": "React Best Practices"
+  },
+  {
+    "id": 115,
+    "topic": "React Anti Patterns"
+  },
+  {
+    "id": 116,
+    "topic": "React Query Explained"
+  },
+  {
+    "id": 117,
+    "topic": "TanStack Query Basics"
+  },
+  {
+    "id": 118,
+    "topic": "State Management in React"
+  },
+  {
+    "id": 119,
+    "topic": "Redux Thunk"
+  },
+  {
+    "id": 120,
+    "topic": "Redux Saga"
+  },
+  {
+    "id": 121,
+    "topic": "Zustand State Management"
+  },
+  {
+    "id": 122,
+    "topic": "React Testing Basics"
+  },
+  {
+    "id": 123,
+    "topic": "What is Jest?"
+  },
+  {
+    "id": 124,
+    "topic": "What is React Testing Library?"
+  },
+  {
+    "id": 125,
+    "topic": "How to Test React Components?"
+  },
+  {
+    "id": 126,
+    "topic": "React Interview Question #1"
+  },
+  {
+    "id": 127,
+    "topic": "React Interview Question #2"
+  },
+  {
+    "id": 128,
+    "topic": "React Interview Question #3"
+  },
+  {
+    "id": 129,
+    "topic": "React Interview Question #4"
+  },
+  {
+    "id": 130,
+    "topic": "React Interview Question #5"
+  },
+  {
+    "id": 131,
+    "topic": "What is Node.js?"
+  },
+  {
+    "id": 132,
+    "topic": "Why Node.js is Popular?"
+  },
+  {
+    "id": 133,
+    "topic": "How Node.js Works?"
+  },
+  {
+    "id": 134,
+    "topic": "What is the V8 Engine?"
+  },
+  {
+    "id": 135,
+    "topic": "Node.js Architecture Explained"
+  },
+  {
+    "id": 136,
+    "topic": "What is Non-Blocking I/O?"
+  },
+  {
+    "id": 137,
+    "topic": "Blocking vs Non-Blocking Code"
+  },
+  {
+    "id": 138,
+    "topic": "What is Event Driven Architecture?"
+  },
+  {
+    "id": 139,
+    "topic": "Node.js Event Loop Deep Dive"
+  },
+  {
+    "id": 140,
+    "topic": "Node.js Single Threaded Myth"
+  },
+  {
+    "id": 141,
+    "topic": "What is npm?"
+  },
+  {
+    "id": 142,
+    "topic": "What is package.json?"
+  },
+  {
+    "id": 143,
+    "topic": "What is package-lock.json?"
+  },
+  {
+    "id": 144,
+    "topic": "npm vs yarn vs pnpm"
+  },
+  {
+    "id": 145,
+    "topic": "What are Environment Variables?"
+  },
+  {
+    "id": 146,
+    "topic": "What is dotenv?"
+  },
+  {
+    "id": 147,
+    "topic": "What are Node Modules?"
+  },
+  {
+    "id": 148,
+    "topic": "CommonJS vs ES Modules in Node.js"
+  },
+  {
+    "id": 149,
+    "topic": "What is the File System Module?"
+  },
+  {
+    "id": 150,
+    "topic": "How to Read Files in Node.js?"
+  },
+  {
+    "id": 151,
+    "topic": "How to Write Files in Node.js?"
+  },
+  {
+    "id": 152,
+    "topic": "What is the Path Module?"
+  },
+  {
+    "id": 153,
+    "topic": "What is the OS Module?"
+  },
+  {
+    "id": 154,
+    "topic": "What is the HTTP Module?"
+  },
+  {
+    "id": 155,
+    "topic": "Creating a Server in Node.js"
+  },
+  {
+    "id": 156,
+    "topic": "What are Streams in Node.js?"
+  },
+  {
+    "id": 157,
+    "topic": "What are Buffers?"
+  },
+  {
+    "id": 158,
+    "topic": "What are Worker Threads?"
+  },
+  {
+    "id": 159,
+    "topic": "What is Node.js Clustering?"
+  },
+  {
+    "id": 160,
+    "topic": "Node.js Performance Optimization"
+  },
+  {
+    "id": 161,
+    "topic": "What is Express.js?"
+  },
+  {
+    "id": 162,
+    "topic": "Why Use Express.js?"
+  },
+  {
+    "id": 163,
+    "topic": "Setting Up an Express Server"
+  },
+  {
+    "id": 164,
+    "topic": "What is Middleware?"
+  },
+  {
+    "id": 165,
+    "topic": "Types of Middleware in Express"
+  },
+  {
+    "id": 166,
+    "topic": "Application Middleware"
+  },
+  {
+    "id": 167,
+    "topic": "Router Middleware"
+  },
+  {
+    "id": 168,
+    "topic": "Error Handling Middleware"
+  },
+  {
+    "id": 169,
+    "topic": "Third Party Middleware"
+  },
+  {
+    "id": 170,
+    "topic": "What is Routing in Express?"
+  },
+  {
+    "id": 171,
+    "topic": "GET vs POST vs PUT vs DELETE"
+  },
+  {
+    "id": 172,
+    "topic": "What are REST APIs?"
+  },
+  {
+    "id": 173,
+    "topic": "REST API Best Practices"
+  },
+  {
+    "id": 174,
+    "topic": "Route Parameters Explained"
+  },
+  {
+    "id": 175,
+    "topic": "Query Parameters Explained"
+  },
+  {
+    "id": 176,
+    "topic": "Request Object in Express"
+  },
+  {
+    "id": 177,
+    "topic": "Response Object in Express"
+  },
+  {
+    "id": 178,
+    "topic": "What is Express Router?"
+  },
+  {
+    "id": 179,
+    "topic": "How to Structure Express Projects?"
+  },
+  {
+    "id": 180,
+    "topic": "Express Error Handling Best Practices"
+  },
+  {
+    "id": 181,
+    "topic": "What is CORS?"
+  },
+  {
+    "id": 182,
+    "topic": "Why CORS Exists?"
+  },
+  {
+    "id": 183,
+    "topic": "What is Helmet.js?"
+  },
+  {
+    "id": 184,
+    "topic": "What is Morgan Logger?"
+  },
+  {
+    "id": 185,
+    "topic": "What is Winston Logger?"
+  },
+  {
+    "id": 186,
+    "topic": "How to Upload Files in Express?"
+  },
+  {
+    "id": 187,
+    "topic": "What is Multer?"
+  },
+  {
+    "id": 188,
+    "topic": "How to Send Emails in Node.js?"
+  },
+  {
+    "id": 189,
+    "topic": "What is Nodemailer?"
+  },
+  {
+    "id": 190,
+    "topic": "How to Create APIs with Express?"
+  },
+  {
+    "id": 191,
+    "topic": "API Versioning Explained"
+  },
+  {
+    "id": 192,
+    "topic": "API Rate Limiting"
+  },
+  {
+    "id": 193,
+    "topic": "API Validation Explained"
+  },
+  {
+    "id": 194,
+    "topic": "What is Joi Validation?"
+  },
+  {
+    "id": 195,
+    "topic": "What is Express Validator?"
+  },
+  {
+    "id": 196,
+    "topic": "Express Security Best Practices"
+  },
+  {
+    "id": 197,
+    "topic": "Express Interview Question #1"
+  },
+  {
+    "id": 198,
+    "topic": "Express Interview Question #2"
+  },
+  {
+    "id": 199,
+    "topic": "Express Interview Question #3"
+  },
+  {
+    "id": 200,
+    "topic": "Building Your First REST API"
+  },
+  {
+    "id": 201,
+    "topic": "What is MongoDB?"
+  },
+  {
+    "id": 202,
+    "topic": "Why MongoDB is Popular?"
+  },
+  {
+    "id": 203,
+    "topic": "SQL vs MongoDB"
+  },
+  {
+    "id": 204,
+    "topic": "What is NoSQL?"
+  },
+  {
+    "id": 205,
+    "topic": "What is BSON?"
+  },
+  {
+    "id": 206,
+    "topic": "What is a Database?"
+  },
+  {
+    "id": 207,
+    "topic": "What is a Collection?"
+  },
+  {
+    "id": 208,
+    "topic": "What is a Document?"
+  },
+  {
+    "id": 209,
+    "topic": "What is MongoDB Atlas?"
+  },
+  {
+    "id": 210,
+    "topic": "How MongoDB Stores Data?"
+  },
+  {
+    "id": 211,
+    "topic": "Installing MongoDB"
+  },
+  {
+    "id": 212,
+    "topic": "Connecting Node.js to MongoDB"
+  },
+  {
+    "id": 213,
+    "topic": "What is Mongoose?"
+  },
+  {
+    "id": 214,
+    "topic": "Why Use Mongoose?"
+  },
+  {
+    "id": 215,
+    "topic": "What is a Schema?"
+  },
+  {
+    "id": 216,
+    "topic": "What is a Model?"
+  },
+  {
+    "id": 217,
+    "topic": "Creating Documents in MongoDB"
+  },
+  {
+    "id": 218,
+    "topic": "Reading Documents in MongoDB"
+  },
+  {
+    "id": 219,
+    "topic": "Updating Documents in MongoDB"
+  },
+  {
+    "id": 220,
+    "topic": "Deleting Documents in MongoDB"
+  },
+  {
+    "id": 221,
+    "topic": "MongoDB CRUD Operations"
+  },
+  {
+    "id": 222,
+    "topic": "What is Aggregation?"
+  },
+  {
+    "id": 223,
+    "topic": "What is Aggregation Pipeline?"
+  },
+  {
+    "id": 224,
+    "topic": "What is $match in MongoDB?"
+  },
+  {
+    "id": 225,
+    "topic": "What is $group in MongoDB?"
+  },
+  {
+    "id": 226,
+    "topic": "What is $lookup in MongoDB?"
+  },
+  {
+    "id": 227,
+    "topic": "What is $project in MongoDB?"
+  },
+  {
+    "id": 228,
+    "topic": "What is $sort in MongoDB?"
+  },
+  {
+    "id": 229,
+    "topic": "What is $limit in MongoDB?"
+  },
+  {
+    "id": 230,
+    "topic": "What is Pagination in MongoDB?"
+  },
+  {
+    "id": 231,
+    "topic": "What is Indexing?"
+  },
+  {
+    "id": 232,
+    "topic": "Why Indexing Improves Performance?"
+  },
+  {
+    "id": 233,
+    "topic": "What is a Compound Index?"
+  },
+  {
+    "id": 234,
+    "topic": "What is Text Search?"
+  },
+  {
+    "id": 235,
+    "topic": "MongoDB Performance Optimization"
+  },
+  {
+    "id": 236,
+    "topic": "What is Replication?"
+  },
+  {
+    "id": 237,
+    "topic": "What is Sharding?"
+  },
+  {
+    "id": 238,
+    "topic": "MongoDB Best Practices"
+  },
+  {
+    "id": 239,
+    "topic": "MongoDB Interview Question #1"
+  },
+  {
+    "id": 240,
+    "topic": "MongoDB Interview Question #2"
+  },
+  {
+    "id": 241,
+    "topic": "What is Authentication?"
+  },
+  {
+    "id": 242,
+    "topic": "Authentication vs Authorization"
+  },
+  {
+    "id": 243,
+    "topic": "What is JWT?"
+  },
+  {
+    "id": 244,
+    "topic": "How JWT Works?"
+  },
+  {
+    "id": 245,
+    "topic": "JWT Structure Explained"
+  },
+  {
+    "id": 246,
+    "topic": "JWT vs Session Authentication"
+  },
+  {
+    "id": 247,
+    "topic": "What is bcrypt?"
+  },
+  {
+    "id": 248,
+    "topic": "Password Hashing Explained"
+  },
+  {
+    "id": 249,
+    "topic": "What is Salting?"
+  },
+  {
+    "id": 250,
+    "topic": "How Login Systems Work?"
+  },
+  {
+    "id": 251,
+    "topic": "What is Refresh Token?"
+  },
+  {
+    "id": 252,
+    "topic": "Access Token vs Refresh Token"
+  },
+  {
+    "id": 253,
+    "topic": "Role Based Access Control"
+  },
+  {
+    "id": 254,
+    "topic": "What is OAuth?"
+  },
+  {
+    "id": 255,
+    "topic": "Google Authentication with MERN"
+  },
+  {
+    "id": 256,
+    "topic": "GitHub Authentication with MERN"
+  },
+  {
+    "id": 257,
+    "topic": "How to Secure APIs?"
+  },
+  {
+    "id": 258,
+    "topic": "What is API Authorization?"
+  },
+  {
+    "id": 259,
+    "topic": "Authentication Best Practices"
+  },
+  {
+    "id": 260,
+    "topic": "Common Authentication Mistakes"
+  },
+  {
+    "id": 261,
+    "topic": "What is XSS?"
+  },
+  {
+    "id": 262,
+    "topic": "How XSS Attacks Work?"
+  },
+  {
+    "id": 263,
+    "topic": "What is CSRF?"
+  },
+  {
+    "id": 264,
+    "topic": "How CSRF Attacks Work?"
+  },
+  {
+    "id": 265,
+    "topic": "What is SQL Injection?"
+  },
+  {
+    "id": 266,
+    "topic": "What is NoSQL Injection?"
+  },
+  {
+    "id": 267,
+    "topic": "What is HTTPS?"
+  },
+  {
+    "id": 268,
+    "topic": "How SSL Certificates Work?"
+  },
+  {
+    "id": 269,
+    "topic": "What is Encryption?"
+  },
+  {
+    "id": 270,
+    "topic": "Hashing vs Encryption"
+  },
+  {
+    "id": 271,
+    "topic": "How to Store Passwords Securely?"
+  },
+  {
+    "id": 272,
+    "topic": "Security Headers Explained"
+  },
+  {
+    "id": 273,
+    "topic": "What is Helmet.js?"
+  },
+  {
+    "id": 274,
+    "topic": "Rate Limiting for Security"
+  },
+  {
+    "id": 275,
+    "topic": "API Security Checklist"
+  },
+  {
+    "id": 276,
+    "topic": "Common Security Mistakes in MERN"
+  },
+  {
+    "id": 277,
+    "topic": "Security Interview Question #1"
+  },
+  {
+    "id": 278,
+    "topic": "Security Interview Question #2"
+  },
+  {
+    "id": 279,
+    "topic": "Security Interview Question #3"
+  },
+  {
+    "id": 280,
+    "topic": "Building Secure MERN Applications"
+  },
+  {
+    "id": 281,
+    "topic": "What is Redis?"
+  },
+  {
+    "id": 282,
+    "topic": "Why Redis is Fast?"
+  },
+  {
+    "id": 283,
+    "topic": "Redis vs MongoDB"
+  },
+  {
+    "id": 284,
+    "topic": "Caching Explained"
+  },
+  {
+    "id": 285,
+    "topic": "Why Use Caching?"
+  },
+  {
+    "id": 286,
+    "topic": "API Caching with Redis"
+  },
+  {
+    "id": 287,
+    "topic": "Session Storage with Redis"
+  },
+  {
+    "id": 288,
+    "topic": "Redis Data Types"
+  },
+  {
+    "id": 289,
+    "topic": "Redis Best Practices"
+  },
+  {
+    "id": 290,
+    "topic": "Common Redis Use Cases"
+  },
+  {
+    "id": 291,
+    "topic": "What is WebSocket?"
+  },
+  {
+    "id": 292,
+    "topic": "WebSocket vs HTTP"
+  },
+  {
+    "id": 293,
+    "topic": "What is Socket.io?"
+  },
+  {
+    "id": 294,
+    "topic": "Building a Chat App with Socket.io"
+  },
+  {
+    "id": 295,
+    "topic": "Real-Time Applications Explained"
+  },
+  {
+    "id": 296,
+    "topic": "What are Background Jobs?"
+  },
+  {
+    "id": 297,
+    "topic": "What are Queues?"
+  },
+  {
+    "id": 298,
+    "topic": "BullMQ Explained"
+  },
+  {
+    "id": 299,
+    "topic": "Event Driven Systems"
+  },
+  {
+    "id": 300,
+    "topic": "Backend Architecture Best Practices"
+  },
+  {
+    "id": 301,
+    "topic": "What is Git?"
+  },
+  {
+    "id": 302,
+    "topic": "Why Every Developer Uses Git?"
+  },
+  {
+    "id": 303,
+    "topic": "What is Version Control?"
+  },
+  {
+    "id": 304,
+    "topic": "Git vs GitHub"
+  },
+  {
+    "id": 305,
+    "topic": "Installing Git"
+  },
+  {
+    "id": 306,
+    "topic": "What is git init?"
+  },
+  {
+    "id": 307,
+    "topic": "What is git clone?"
+  },
+  {
+    "id": 308,
+    "topic": "What is git add?"
+  },
+  {
+    "id": 309,
+    "topic": "What is git commit?"
+  },
+  {
+    "id": 310,
+    "topic": "What is git push?"
+  },
+  {
+    "id": 311,
+    "topic": "What is git pull?"
+  },
+  {
+    "id": 312,
+    "topic": "What is git fetch?"
+  },
+  {
+    "id": 313,
+    "topic": "What is a Branch in Git?"
+  },
+  {
+    "id": 314,
+    "topic": "How Git Branches Work?"
+  },
+  {
+    "id": 315,
+    "topic": "What is git checkout?"
+  },
+  {
+    "id": 316,
+    "topic": "What is git switch?"
+  },
+  {
+    "id": 317,
+    "topic": "What is git merge?"
+  },
+  {
+    "id": 318,
+    "topic": "What is git rebase?"
+  },
+  {
+    "id": 319,
+    "topic": "Merge vs Rebase"
+  },
+  {
+    "id": 320,
+    "topic": "How to Resolve Merge Conflicts?"
+  },
+  {
+    "id": 321,
+    "topic": "What is a Pull Request?"
+  },
+  {
+    "id": 322,
+    "topic": "What is Code Review?"
+  },
+  {
+    "id": 323,
+    "topic": "What is git stash?"
+  },
+  {
+    "id": 324,
+    "topic": "What is git reset?"
+  },
+  {
+    "id": 325,
+    "topic": "What is git revert?"
+  },
+  {
+    "id": 326,
+    "topic": "Git Best Practices"
+  },
+  {
+    "id": 327,
+    "topic": "Git Workflow for Teams"
+  },
+  {
+    "id": 328,
+    "topic": "GitHub Actions Basics"
+  },
+  {
+    "id": 329,
+    "topic": "Git Interview Question #1"
+  },
+  {
+    "id": 330,
+    "topic": "Git Interview Question #2"
+  },
+  {
+    "id": 331,
+    "topic": "What is Deployment?"
+  },
+  {
+    "id": 332,
+    "topic": "Frontend vs Backend Deployment"
+  },
+  {
+    "id": 333,
+    "topic": "How to Deploy React Apps?"
+  },
+  {
+    "id": 334,
+    "topic": "How to Deploy Node.js Apps?"
+  },
+  {
+    "id": 335,
+    "topic": "Deploying MERN Applications"
+  },
+  {
+    "id": 336,
+    "topic": "What is Vercel?"
+  },
+  {
+    "id": 337,
+    "topic": "What is Netlify?"
+  },
+  {
+    "id": 338,
+    "topic": "What is Render?"
+  },
+  {
+    "id": 339,
+    "topic": "What is Railway?"
+  },
+  {
+    "id": 340,
+    "topic": "Deployment Best Practices"
+  },
+  {
+    "id": 341,
+    "topic": "What is Docker?"
+  },
+  {
+    "id": 342,
+    "topic": "Why Docker is Important?"
+  },
+  {
+    "id": 343,
+    "topic": "Docker vs Virtual Machine"
+  },
+  {
+    "id": 344,
+    "topic": "What is a Docker Image?"
+  },
+  {
+    "id": 345,
+    "topic": "What is a Docker Container?"
+  },
+  {
+    "id": 346,
+    "topic": "Dockerfile Explained"
+  },
+  {
+    "id": 347,
+    "topic": "Docker Commands Every Developer Should Know"
+  },
+  {
+    "id": 348,
+    "topic": "Dockerizing a MERN Application"
+  },
+  {
+    "id": 349,
+    "topic": "Docker Compose Explained"
+  },
+  {
+    "id": 350,
+    "topic": "Docker Best Practices"
+  },
+  {
+    "id": 351,
+    "topic": "What is AWS?"
+  },
+  {
+    "id": 352,
+    "topic": "Why Learn AWS?"
+  },
+  {
+    "id": 353,
+    "topic": "What is EC2?"
+  },
+  {
+    "id": 354,
+    "topic": "What is S3?"
+  },
+  {
+    "id": 355,
+    "topic": "What is Lambda?"
+  },
+  {
+    "id": 356,
+    "topic": "What is CloudFront?"
+  },
+  {
+    "id": 357,
+    "topic": "What is RDS?"
+  },
+  {
+    "id": 358,
+    "topic": "AWS Services Every MERN Developer Should Know"
+  },
+  {
+    "id": 359,
+    "topic": "Hosting MERN Apps on AWS"
+  },
+  {
+    "id": 360,
+    "topic": "AWS Interview Question #1"
+  },
+  {
+    "id": 361,
+    "topic": "What is GCP?"
+  },
+  {
+    "id": 362,
+    "topic": "Why Use Google Cloud?"
+  },
+  {
+    "id": 363,
+    "topic": "What is Compute Engine?"
+  },
+  {
+    "id": 364,
+    "topic": "What is Cloud Storage?"
+  },
+  {
+    "id": 365,
+    "topic": "What is Cloud Functions?"
+  },
+  {
+    "id": 366,
+    "topic": "Firebase vs GCP"
+  },
+  {
+    "id": 367,
+    "topic": "Deploying MERN Apps on GCP"
+  },
+  {
+    "id": 368,
+    "topic": "Google Cloud Best Practices"
+  },
+  {
+    "id": 369,
+    "topic": "GCP Interview Question #1"
+  },
+  {
+    "id": 370,
+    "topic": "GCP Interview Question #2"
+  },
+  {
+    "id": 371,
+    "topic": "Build a Todo Application with MERN"
+  },
+  {
+    "id": 372,
+    "topic": "Build a Notes Application"
+  },
+  {
+    "id": 373,
+    "topic": "Build a Blog Platform"
+  },
+  {
+    "id": 374,
+    "topic": "Build a URL Shortener"
+  },
+  {
+    "id": 375,
+    "topic": "Build a Chat Application"
+  },
+  {
+    "id": 376,
+    "topic": "Build a Social Media App"
+  },
+  {
+    "id": 377,
+    "topic": "Build an Expense Tracker"
+  },
+  {
+    "id": 378,
+    "topic": "Build a Learning Management System"
+  },
+  {
+    "id": 379,
+    "topic": "Build a Job Portal"
+  },
+  {
+    "id": 380,
+    "topic": "Build an E-commerce Application"
+  },
+  {
+    "id": 381,
+    "topic": "How to Design REST APIs?"
+  },
+  {
+    "id": 382,
+    "topic": "REST vs GraphQL"
+  },
+  {
+    "id": 383,
+    "topic": "API Versioning"
+  },
+  {
+    "id": 384,
+    "topic": "Pagination Best Practices"
+  },
+  {
+    "id": 385,
+    "topic": "API Error Handling"
+  },
+  {
+    "id": 386,
+    "topic": "API Response Standards"
+  },
+  {
+    "id": 387,
+    "topic": "Building Scalable APIs"
+  },
+  {
+    "id": 388,
+    "topic": "API Documentation with Swagger"
+  },
+  {
+    "id": 389,
+    "topic": "OpenAPI Specification Explained"
+  },
+  {
+    "id": 390,
+    "topic": "Backend Project Structure"
+  },
+  {
+    "id": 391,
+    "topic": "Microservices vs Monolith"
+  },
+  {
+    "id": 392,
+    "topic": "What is a Monolithic Architecture?"
+  },
+  {
+    "id": 393,
+    "topic": "What are Microservices?"
+  },
+  {
+    "id": 394,
+    "topic": "API Gateway Explained"
+  },
+  {
+    "id": 395,
+    "topic": "Load Balancing Explained"
+  },
+  {
+    "id": 396,
+    "topic": "Caching Strategies"
+  },
+  {
+    "id": 397,
+    "topic": "CDN Explained"
+  },
+  {
+    "id": 398,
+    "topic": "System Design Basics for MERN Developers"
+  },
+  {
+    "id": 399,
+    "topic": "Common Production Issues in MERN Apps"
+  },
+  {
+    "id": 400,
+    "topic": "How Senior Developers Build Scalable Applications?"
+  },
+  {
+    "id": 401,
+    "topic": "What is System Design?"
+  },
+  {
+    "id": 402,
+    "topic": "Why Developers Should Learn System Design?"
+  },
+  {
+    "id": 403,
+    "topic": "How WhatsApp Handles Billions of Messages?"
+  },
+  {
+    "id": 404,
+    "topic": "How Instagram Stores Billions of Photos?"
+  },
+  {
+    "id": 405,
+    "topic": "How YouTube Streams Videos?"
+  },
+  {
+    "id": 406,
+    "topic": "How Netflix Recommends Movies?"
+  },
+  {
+    "id": 407,
+    "topic": "How Amazon Handles Millions of Orders?"
+  },
+  {
+    "id": 408,
+    "topic": "How Uber Matches Drivers and Riders?"
+  },
+  {
+    "id": 409,
+    "topic": "How Zomato Handles Food Delivery?"
+  },
+  {
+    "id": 410,
+    "topic": "How Spotify Recommends Songs?"
+  },
+  {
+    "id": 411,
+    "topic": "How Google Search Works?"
+  },
+  {
+    "id": 412,
+    "topic": "How Gmail Works?"
+  },
+  {
+    "id": 413,
+    "topic": "How LinkedIn Works?"
+  },
+  {
+    "id": 414,
+    "topic": "How Twitter/X Handles Millions of Posts?"
+  },
+  {
+    "id": 415,
+    "topic": "What is Horizontal Scaling?"
+  },
+  {
+    "id": 416,
+    "topic": "What is Vertical Scaling?"
+  },
+  {
+    "id": 417,
+    "topic": "Database Scaling Techniques"
+  },
+  {
+    "id": 418,
+    "topic": "Read Replicas Explained"
+  },
+  {
+    "id": 419,
+    "topic": "What is Database Partitioning?"
+  },
+  {
+    "id": 420,
+    "topic": "What is Sharding?"
+  },
+  {
+    "id": 421,
+    "topic": "Advanced React Interview Question #1"
+  },
+  {
+    "id": 422,
+    "topic": "Advanced React Interview Question #2"
+  },
+  {
+    "id": 423,
+    "topic": "Advanced React Interview Question #3"
+  },
+  {
+    "id": 424,
+    "topic": "Advanced React Interview Question #4"
+  },
+  {
+    "id": 425,
+    "topic": "Advanced React Interview Question #5"
+  },
+  {
+    "id": 426,
+    "topic": "Advanced Node.js Interview Question #1"
+  },
+  {
+    "id": 427,
+    "topic": "Advanced Node.js Interview Question #2"
+  },
+  {
+    "id": 428,
+    "topic": "Advanced Node.js Interview Question #3"
+  },
+  {
+    "id": 429,
+    "topic": "Advanced Node.js Interview Question #4"
+  },
+  {
+    "id": 430,
+    "topic": "Advanced Node.js Interview Question #5"
+  },
+  {
+    "id": 431,
+    "topic": "Advanced MongoDB Interview Question #1"
+  },
+  {
+    "id": 432,
+    "topic": "Advanced MongoDB Interview Question #2"
+  },
+  {
+    "id": 433,
+    "topic": "Advanced MongoDB Interview Question #3"
+  },
+  {
+    "id": 434,
+    "topic": "Advanced MongoDB Interview Question #4"
+  },
+  {
+    "id": 435,
+    "topic": "Advanced MongoDB Interview Question #5"
+  },
+  {
+    "id": 436,
+    "topic": "Senior MERN Interview Question #1"
+  },
+  {
+    "id": 437,
+    "topic": "Senior MERN Interview Question #2"
+  },
+  {
+    "id": 438,
+    "topic": "Senior MERN Interview Question #3"
+  },
+  {
+    "id": 439,
+    "topic": "Senior MERN Interview Question #4"
+  },
+  {
+    "id": 440,
+    "topic": "Senior MERN Interview Question #5"
+  },
+  {
+    "id": 441,
+    "topic": "What is React Server Components?"
+  },
+  {
+    "id": 442,
+    "topic": "React Performance Bottlenecks"
+  },
+  {
+    "id": 443,
+    "topic": "Optimizing Large React Applications"
+  },
+  {
+    "id": 444,
+    "topic": "State Management at Scale"
+  },
+  {
+    "id": 445,
+    "topic": "Advanced Custom Hooks"
+  },
+  {
+    "id": 446,
+    "topic": "Building Reusable Component Libraries"
+  },
+  {
+    "id": 447,
+    "topic": "Frontend Architecture Patterns"
+  },
+  {
+    "id": 448,
+    "topic": "Micro Frontends Explained"
+  },
+  {
+    "id": 449,
+    "topic": "React Security Best Practices"
+  },
+  {
+    "id": 450,
+    "topic": "Advanced React Debugging Techniques"
+  },
+  {
+    "id": 451,
+    "topic": "Scaling Node.js Applications"
+  },
+  {
+    "id": 452,
+    "topic": "Node.js Memory Leaks"
+  },
+  {
+    "id": 453,
+    "topic": "Debugging Production Issues in Node.js"
+  },
+  {
+    "id": 454,
+    "topic": "API Performance Optimization"
+  },
+  {
+    "id": 455,
+    "topic": "Database Query Optimization"
+  },
+  {
+    "id": 456,
+    "topic": "Handling Millions of Requests"
+  },
+  {
+    "id": 457,
+    "topic": "Distributed Systems Basics"
+  },
+  {
+    "id": 458,
+    "topic": "Message Queues Explained"
+  },
+  {
+    "id": 459,
+    "topic": "Kafka vs RabbitMQ"
+  },
+  {
+    "id": 460,
+    "topic": "Event Driven Architecture in Production"
+  },
+  {
+    "id": 461,
+    "topic": "Building SaaS Applications with MERN"
+  },
+  {
+    "id": 462,
+    "topic": "Multi-Tenant Architecture Explained"
+  },
+  {
+    "id": 463,
+    "topic": "Subscription Billing Systems"
+  },
+  {
+    "id": 464,
+    "topic": "Implementing RBAC in SaaS"
+  },
+  {
+    "id": 465,
+    "topic": "Building Admin Dashboards"
+  },
+  {
+    "id": 466,
+    "topic": "Audit Logs Explained"
+  },
+  {
+    "id": 467,
+    "topic": "Feature Flags Explained"
+  },
+  {
+    "id": 468,
+    "topic": "Designing Notification Systems"
+  },
+  {
+    "id": 469,
+    "topic": "Email Queue Architecture"
+  },
+  {
+    "id": 470,
+    "topic": "Background Job Processing"
+  },
+  {
+    "id": 471,
+    "topic": "How to Design a URL Shortener?"
+  },
+  {
+    "id": 472,
+    "topic": "How to Design a Chat Application?"
+  },
+  {
+    "id": 473,
+    "topic": "How to Design Instagram?"
+  },
+  {
+    "id": 474,
+    "topic": "How to Design WhatsApp?"
+  },
+  {
+    "id": 475,
+    "topic": "How to Design YouTube?"
+  },
+  {
+    "id": 476,
+    "topic": "How to Design Netflix?"
+  },
+  {
+    "id": 477,
+    "topic": "How to Design an E-commerce Platform?"
+  },
+  {
+    "id": 478,
+    "topic": "How to Design a Food Delivery App?"
+  },
+  {
+    "id": 479,
+    "topic": "How to Design a Ride Sharing App?"
+  },
+  {
+    "id": 480,
+    "topic": "How to Design a Learning Management System?"
+  },
+  {
+    "id": 481,
+    "topic": "Common MERN Mistakes Beginners Make"
+  },
+  {
+    "id": 482,
+    "topic": "Common MERN Mistakes Intermediate Developers Make"
+  },
+  {
+    "id": 483,
+    "topic": "Code Review Best Practices"
+  },
+  {
+    "id": 484,
+    "topic": "Writing Clean Code in JavaScript"
+  },
+  {
+    "id": 485,
+    "topic": "SOLID Principles for JavaScript Developers"
+  },
+  {
+    "id": 486,
+    "topic": "Design Patterns Every MERN Developer Should Know"
+  },
+  {
+    "id": 487,
+    "topic": "Repository Pattern Explained"
+  },
+  {
+    "id": 488,
+    "topic": "Service Layer Pattern Explained"
+  },
+  {
+    "id": 489,
+    "topic": "MVC Architecture Explained"
+  },
+  {
+    "id": 490,
+    "topic": "Clean Architecture for MERN Applications"
+  },
+  {
+    "id": 491,
+    "topic": "How to Become a MERN Developer in 2026?"
+  },
+  {
+    "id": 492,
+    "topic": "MERN Roadmap for Beginners"
+  },
+  {
+    "id": 493,
+    "topic": "How to Build a Strong MERN Portfolio?"
+  },
+  {
+    "id": 494,
+    "topic": "Top MERN Projects for Resume Building"
+  },
+  {
+    "id": 495,
+    "topic": "How to Crack MERN Interviews?"
+  },
+  {
+    "id": 496,
+    "topic": "Startup vs MNC for MERN Developers"
+  },
+  {
+    "id": 497,
+    "topic": "How Senior MERN Developers Think?"
+  },
+  {
+    "id": 498,
+    "topic": "Skills Needed for 10+ LPA MERN Roles"
+  },
+  {
+    "id": 499,
+    "topic": "From Junior to Senior MERN Developer"
+  },
+  {
+    "id": 500,
+    "topic": "Complete MERN Developer Roadmap"
+  }
+]

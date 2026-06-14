@@ -1,0 +1,54 @@
+name: Daily Automated Reels Generation
+
+on:
+  schedule:
+    # Runs 3 times a day at 02:00, 10:00, and 18:00 UTC
+    # (Approx: 7:30 AM, 3:30 PM, and 11:30 PM IST)
+    - cron: '0 2,10,18 * * *'
+  
+  # Allow manual trigger from GitHub Actions tab
+  workflow_dispatch:
+
+jobs:
+  generate_and_post:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        working-directory: ./Testing
+        run: npm install
+
+      - name: Install FFmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - name: Create Temp & Output Directories
+        working-directory: ./Testing
+        run: |
+          mkdir -p temp
+          mkdir -p output
+
+      - name: Run Automated Generation and Posting
+        working-directory: ./Testing
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: node cron_job.js
+
+      - name: Commit Updated Queue
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add Testing/question.json
+          git commit -m "chore: update processed topics in queue" || echo "No changes to commit"
+          git push

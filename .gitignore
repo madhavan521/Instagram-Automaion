@@ -1,7 +1,15 @@
 node_modules/
 .env
 temp/
-testing/ig_profile/
-testing/temp/
-testing/output/
-testing/node_modules/
+
+# Testing folder (capital T) - where the bot lives
+Testing/ig_profile/
+Testing/temp/
+Testing/output/
+Testing/node_modules/
+Testing/question_fixed.json
+Testing/extract.js
+Testing/recover.js
+
+# Video files
+*.mp4

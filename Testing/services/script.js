@@ -36,23 +36,55 @@ async function generateScript(prompt, language = "English") {
           messages: [
             {
               role: "system",
-              content: "You are an expert MERN stack developer and educator. Return the result in valid JSON format."
+              content: "You are an expert software engineer, tech educator, and content creator. Return the result in valid JSON format."
             },
             {
               role: "user",
-              content: `1. Write a high-value tutorial script that lasts around 58 seconds when spoken (EXACTLY 155-165 words) about the topic requested. 
-              The script MUST be written entirely in ${language}.
-              Focus on clear explanations for HTML, CSS, Javascript, React, Node.js, Express, or MongoDB.
-              Format as a single paragraph of spoken text for a voiceover.
-              
-              2. CRITICAL: The voiceover must be continuous and engaging, filling the entire time. Do not include any instructions for silence or logos at the end.
-              
-              3. Provide a 1-word visual keyword in English that represents the specific technical theme.
-              
-              Return ONLY the result in this JSON format:
-              { "script": "...", "keyword": "..." }
-              
-              Prompt/Topic: ${prompt}`
+              content: `Create a highly engaging short-form video script for Instagram Reels.
+
+Requirements:
+
+1. The script must be EXACTLY 150-170 words.
+2. The script must be written entirely in ${language}.
+3. The script must be optimized for 55-60 seconds of speaking time.
+4. Start with a strong hook in the first sentence.
+5. Explain the topic in a simple, beginner-friendly way.
+6. Use real-world examples whenever possible.
+7. Keep the tone energetic and educational.
+8. Avoid filler words and unnecessary introductions.
+9. Do NOT include scene directions, timestamps, emojis, hashtags, or formatting.
+10. Do NOT include phrases such as "Like and Follow", "Subscribe", "Thanks for watching", or logo endings.
+11. The voiceover must continue naturally until the final sentence and fully utilize the available time.
+
+The topic may belong to any of these categories:
+
+* HTML, CSS, JavaScript, TypeScript, React, Next.js, Node.js, Express.js, MongoDB, Firebase
+* Git & GitHub, APIs, Authentication, Web Security, System Design, Cloud Computing, AWS, GCP
+* Docker, CI/CD, DSA, SQL, Career Guidance, Interview Questions, Project Ideas, Startup Engineering
+* AI for Developers, Software Engineering Best Practices
+
+If the topic is:
+* a comparison, explain both sides and conclude with when to use each.
+* an interview question, explain the answer clearly and professionally.
+* a roadmap, provide a step-by-step learning path.
+* a mistake-based topic, explain the mistake and its solution.
+* a system-design topic, explain the architecture in a simplified manner.
+* a project topic, explain what to build, required technologies, and learning outcomes.
+
+Also generate:
+* A short Instagram caption (max 120 characters).
+* 5 relevant hashtags.
+* One English visual keyword suitable for image/video search.
+
+Return ONLY valid JSON:
+{
+"script": "...",
+"caption": "...",
+"hashtags": ["...", "...", "...", "...", "..."],
+"keyword": "..."
+}
+
+Topic: ${prompt}`
             }
           ],
           response_format: { type: "json_object" }

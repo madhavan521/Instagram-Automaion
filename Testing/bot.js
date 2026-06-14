@@ -43,7 +43,7 @@ bot.on('text', async (ctx) => {
   try {
     const langConfig = LANGUAGES[userSettings.language];
     await ctx.reply(`🚀 Generating script in ${langConfig.name}...`);
-    const { script, keyword } = await generateScript(prompt, langConfig.name);
+    const { script, keyword, caption, hashtags } = await generateScript(prompt, langConfig.name);
     
     await ctx.reply(`🎙 Generating neural voiceover (${langConfig.name})...`);
     const { audioPath, wordBoundaries } = await generateVoice(script, `voice_${requestId}`, langConfig.voice);
@@ -84,9 +84,9 @@ bot.on('text', async (ctx) => {
     console.log(`Thumbnail sent to user for request ${requestId}`);
 
     // Automatic Instagram Upload
-    if (process.env.IG_USERNAME && process.env.IG_USERNAME !== 'your_ig_username') {
+    if (process.env.IG_ACCESS_TOKEN && process.env.IG_USER_ID) {
       try {
-        const fullCaption = `${prompt} #coding #developer #mern #tutorial`;
+        const fullCaption = `${caption || prompt}\n\n${(hashtags || []).join(' ')}`;
         console.log('📸 Uploading to Instagram Reels...');
         await uploadToInstagram(finalVideoPath, fullCaption, thumbnailPath);
         
