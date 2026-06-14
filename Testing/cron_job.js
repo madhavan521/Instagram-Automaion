@@ -77,12 +77,12 @@ async function runCron() {
         }
 
         if (process.env.IG_ACCESS_TOKEN && process.env.IG_USER_ID) {
-            const fullCaption = `${caption || prompt}\n\n${(hashtags || []).join(' ')}`;
-            await notifyUser('📸 Uploading to Instagram Reels directly from GitHub Actions...');
+            // Build clean caption: hook caption + blank line + hashtag block
+            const hashtagBlock = (hashtags || []).map(h => h.startsWith('#') ? h : `#${h}`).join(' ');
+            const fullCaption = `${caption || prompt}\n\n${hashtagBlock}`;
+            await notifyUser(`📸 Uploading to Instagram Reels...\n\nCaption preview:\n${fullCaption.substring(0, 100)}...`);
             await uploadToInstagram(finalVideoPath, fullCaption, thumbnailPath);
-            await notifyUser('🔄 Verifying and editing caption for reliability...');
-            await editLatestPostCaption(fullCaption);
-            await notifyUser(`✅ Successfully posted on Instagram!\nTopic: ${prompt}`);
+            await notifyUser(`✅ Successfully posted on Instagram!\n🎯 Topic: ${prompt}`);
         } else {
             await notifyUser('⚠️ Skipping Instagram upload: IG_ACCESS_TOKEN not set.');
         }

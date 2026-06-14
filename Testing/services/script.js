@@ -72,15 +72,15 @@ If the topic is:
 * a project topic, explain what to build, required technologies, and learning outcomes.
 
 Also generate:
-* A short Instagram caption (max 120 characters).
-* 5 relevant hashtags.
+* A short, punchy Instagram caption (max 150 characters) with an engaging hook — NO hashtags in the caption itself.
+* 10 highly relevant hashtags — mix of broad (#JavaScript, #WebDev) and niche (#ReactHooks, #MERNStack). Always include #MERNStack and #WebDevelopment.
 * One English visual keyword suitable for image/video search.
 
 Return ONLY valid JSON:
 {
 "script": "...",
 "caption": "...",
-"hashtags": ["...", "...", "...", "...", "..."],
+"hashtags": ["#...", "#...", "#...", "#...", "#...", "#...", "#...", "#...", "#...", "#..."],
 "keyword": "..."
 }
 
