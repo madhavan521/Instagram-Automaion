@@ -72,8 +72,6 @@ async function uploadToInstagram(videoPath, caption, thumbnailPath) {
             video_url: publicUrl,
             caption: caption,
             access_token: ACCESS_TOKEN,
-            // Enable Instagram's auto-translation and content tagging features
-            auto_hashtag: "1",
         };
         
         // 2. If thumbnail is provided, upload it to Catbox and pass it to Meta
