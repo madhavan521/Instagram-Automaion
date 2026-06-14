@@ -55,8 +55,8 @@ async function uploadToFileHost(localFilePath) {
  */
 async function uploadToInstagram(videoPath, caption, thumbnailPath) {
     console.log("--- Starting API Instagram Upload ---");
-    const ACCESS_TOKEN = process.env.IG_ACCESS_TOKEN;
-    const IG_USER_ID = process.env.IG_USER_ID;
+    const ACCESS_TOKEN = (process.env.IG_ACCESS_TOKEN || '').trim();
+    const IG_USER_ID = (process.env.IG_USER_ID || '').trim();
 
     if (!ACCESS_TOKEN || !IG_USER_ID) {
         throw new Error("Missing IG_ACCESS_TOKEN or IG_USER_ID in .env");
