@@ -1,0 +1,45 @@
+name: Process and Post Video
+
+on:
+  workflow_dispatch:
+    inputs:
+      video_url:
+        description: 'URL of the video to process and upload'
+        required: true
+        type: string
+      caption:
+        description: 'Caption for the Instagram Reel'
+        required: true
+        type: string
+        default: 'Automated post! #reels #bot'
+
+jobs:
+  upload_to_instagram:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Create Temp Directory
+        run: mkdir -p temp
+
+      - name: Download Video
+        run: |
+          echo "Downloading video from ${{ github.event.inputs.video_url }}"
+          curl -L "${{ github.event.inputs.video_url }}" -o temp/downloaded_video.mp4
+          echo "Download complete."
+
+      - name: Run Instagram Publisher
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+        run: |
+          node postReel.js "temp/downloaded_video.mp4" "${{ github.event.inputs.caption }}"
