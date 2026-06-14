@@ -3,19 +3,47 @@ const fs = require('fs');
 const FormData = require('form-data');
 
 /**
- * Uploads a local file to Catbox.moe to get a public URL for Meta
+ * Uploads a local file to a public file host to get a temporary URL.
+ * Tries tmpfiles.org first, falls back to 0x0.st.
  */
-async function uploadToCatbox(localFilePath) {
-    console.log(`[Upload] Uploading ${localFilePath} to Catbox for public URL...`);
-    const form = new FormData();
-    form.append("reqtype", "fileupload");
-    form.append("fileToUpload", fs.createReadStream(localFilePath));
+async function uploadToFileHost(localFilePath) {
+    // --- Attempt 1: tmpfiles.org ---
+    try {
+        console.log(`[Upload] Trying tmpfiles.org...`);
+        const form = new FormData();
+        form.append("file", fs.createReadStream(localFilePath));
+        const response = await axios.post("https://tmpfiles.org/api/v1/upload", form, {
+            headers: form.getHeaders(),
+            maxContentLength: Infinity,
+            maxBodyLength: Infinity,
+        });
+        // Response is like: { status: "success", data: { url: "https://tmpfiles.org/XXXXX/file.mp4" } }
+        const pageUrl = response.data?.data?.url;
+        if (!pageUrl) throw new Error("No URL in tmpfiles.org response");
+        // Convert page URL to direct download URL
+        const directUrl = pageUrl.replace("tmpfiles.org/", "tmpfiles.org/dl/");
+        console.log(`[Upload] tmpfiles.org URL: ${directUrl}`);
+        return directUrl;
+    } catch (err) {
+        console.warn(`[Upload] tmpfiles.org failed: ${err.message}. Trying 0x0.st...`);
+    }
 
-    const response = await axios.post("https://catbox.moe/user/api.php", form, {
-      headers: form.getHeaders(),
-    });
-
-    return response.data;
+    // --- Attempt 2: 0x0.st ---
+    try {
+        const form = new FormData();
+        form.append("file", fs.createReadStream(localFilePath));
+        const response = await axios.post("https://0x0.st", form, {
+            headers: form.getHeaders(),
+            maxContentLength: Infinity,
+            maxBodyLength: Infinity,
+        });
+        const url = response.data?.trim();
+        if (!url || !url.startsWith("http")) throw new Error("Invalid URL from 0x0.st");
+        console.log(`[Upload] 0x0.st URL: ${url}`);
+        return url;
+    } catch (err) {
+        throw new Error(`All file hosts failed. Last error: ${err.message}`);
+    }
 }
 
 /**
@@ -36,7 +64,7 @@ async function uploadToInstagram(videoPath, caption, thumbnailPath) {
 
     try {
         // 1. Get a public URL for the video
-        const publicUrl = await uploadToCatbox(videoPath);
+        const publicUrl = await uploadToFileHost(videoPath);
         console.log(`[IG] Public Video URL ready: ${publicUrl}`);
         
         const payload = {
@@ -49,7 +77,7 @@ async function uploadToInstagram(videoPath, caption, thumbnailPath) {
         // 2. If thumbnail is provided, upload it to Catbox and pass it to Meta
         if (thumbnailPath && fs.existsSync(thumbnailPath)) {
             console.log("Uploading thumbnail to Catbox...");
-            const thumbUrl = await uploadToCatbox(thumbnailPath);
+            const thumbUrl = await uploadToFileHost(thumbnailPath);
             console.log(`[IG] Public Thumbnail URL ready: ${thumbUrl}`);
             payload.cover_url = thumbUrl;
         }
