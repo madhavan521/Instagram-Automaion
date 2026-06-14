@@ -2,9 +2,10 @@ name: Daily Automated Reels Generation
 
 on:
   schedule:
-    # Runs 3 times a day at 02:00, 10:00, and 18:00 UTC
-    # (Approx: 7:30 AM, 3:30 PM, and 11:30 PM IST)
-    - cron: '0 2,10,18 * * *'
+    # Runs 4 times a day:
+    # 9:00 AM IST (03:30 UTC), 12:00 PM IST (06:30 UTC),
+    # 3:00 PM IST (09:30 UTC), 6:00 PM IST (12:30 UTC)
+    - cron: '30 3,6,9,12 * * *'
   
   # Allow manual trigger from GitHub Actions tab
   workflow_dispatch:
