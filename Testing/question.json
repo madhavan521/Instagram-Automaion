@@ -26,7 +26,8 @@
   },
   {
     "id": -10,
-    "topic": "Why Do Startups Prefer MERN Stack?"
+    "topic": "Why Do Startups Prefer MERN Stack?",
+    "process": true
   },
   {
     "id": -9,
