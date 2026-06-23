@@ -96,7 +96,8 @@
   },
   {
     "id": 5,
-    "topic": "var vs let vs const"
+    "topic": "var vs let vs const",
+    "process": true
   },
   {
     "id": 6,
