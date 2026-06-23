@@ -91,7 +91,8 @@
   },
   {
     "id": 4,
-    "topic": "What is ECMAScript?"
+    "topic": "What is ECMAScript?",
+    "process": true
   },
   {
     "id": 5,
