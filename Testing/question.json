@@ -101,7 +101,8 @@
   },
   {
     "id": 6,
-    "topic": "Primitive vs Reference Data Types"
+    "topic": "Primitive vs Reference Data Types",
+    "process": true
   },
   {
     "id": 7,
