@@ -116,7 +116,8 @@
   },
   {
     "id": 9,
-    "topic": "What are Operators?"
+    "topic": "What are Operators?",
+    "process": true
   },
   {
     "id": 10,
