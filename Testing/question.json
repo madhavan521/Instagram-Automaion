@@ -136,7 +136,8 @@
   },
   {
     "id": 13,
-    "topic": "What are Arrays?"
+    "topic": "What are Arrays?",
+    "process": true
   },
   {
     "id": 14,
