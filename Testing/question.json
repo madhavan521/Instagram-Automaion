@@ -151,7 +151,8 @@
   },
   {
     "id": 16,
-    "topic": "for vs forEach"
+    "topic": "for vs forEach",
+    "process": true
   },
   {
     "id": 17,
