@@ -181,7 +181,8 @@
   },
   {
     "id": 22,
-    "topic": "What is Closure?"
+    "topic": "What is Closure?",
+    "process": true
   },
   {
     "id": 23,
