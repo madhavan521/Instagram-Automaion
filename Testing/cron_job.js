@@ -56,7 +56,10 @@ async function runCron() {
 
         const langConfig = { name: 'English', voice: 'en-US-AvaNeural' };
         
-        const { script, keyword, caption, hashtags } = await generateScript(prompt, langConfig.name);
+        // Ensure Groq understands context to prevent confusing terms like "hoisting" with "hosting"
+        const contextPrompt = `${prompt} (Explain in the context of Software Engineering / Web Development)`;
+
+        const { script, keyword, caption, youtubeTitle, hashtags } = await generateScript(contextPrompt, langConfig.name);
         await notifyUser(`🎙 Generating neural voiceover...`);
         
         const { audioPath, wordBoundaries } = await generateVoice(script, `voice_${requestId}`, langConfig.voice);
@@ -88,7 +91,7 @@ async function runCron() {
             // Also post to YouTube!
             try {
                 await notifyUser(`🎥 Uploading to YouTube Shorts...`);
-                const ytId = await publishYouTubeVideo(finalVideoPath, fullCaption, thumbnailPath);
+                const ytId = await publishYouTubeVideo(finalVideoPath, fullCaption, thumbnailPath, youtubeTitle);
                 if (ytId) {
                     await notifyUser(`✅ Successfully posted on YouTube! Video ID: ${ytId}`);
                 }

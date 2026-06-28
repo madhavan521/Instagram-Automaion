@@ -1,7 +1,7 @@
 const { google } = require('googleapis');
 const fs = require('fs');
 
-async function publishYouTubeVideo(localFilePath, caption, thumbnailPath = null) {
+async function publishYouTubeVideo(localFilePath, caption, thumbnailPath = null, youtubeTitle = null) {
   try {
     const YOUTUBE_CLIENT_ID = process.env.YOUTUBE_CLIENT_ID;
     const YOUTUBE_CLIENT_SECRET = process.env.YOUTUBE_CLIENT_SECRET;
@@ -18,9 +18,9 @@ async function publishYouTubeVideo(localFilePath, caption, thumbnailPath = null)
 
     const youtube = google.youtube({ version: 'v3', auth: oauth2Client });
 
-    // Use the first 50 chars of caption as title, or a default
-    let title = caption ? caption.split('\n')[0].substring(0, 50) : "Automated Upload";
-    if (caption && caption.includes('#shorts') && !title.includes('#shorts')) {
+    // Use the provided youtubeTitle, fallback to caption parsing if missing
+    let title = youtubeTitle || (caption ? caption.split('\n')[0].substring(0, 50) : "Automated Upload");
+    if (!title.toLowerCase().includes('#shorts')) {
       title += " #shorts";
     }
 

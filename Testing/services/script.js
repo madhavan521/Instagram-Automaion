@@ -71,15 +71,16 @@ If the topic is:
 * a system-design topic, explain the architecture in a simplified manner.
 * a project topic, explain what to build, required technologies, and learning outcomes.
 
-Also generate:
 * A short, punchy Instagram caption (max 150 characters) with an engaging hook — NO hashtags in the caption itself.
-* 10 highly relevant hashtags — mix of broad (#JavaScript, #WebDev) and niche (#ReactHooks, #MERNStack). Always include #MERNStack and #WebDevelopment.
+* A catchy YouTube Shorts title (max 50 characters) that includes the topic name and is highly clickable.
+* 10 highly relevant hashtags — mix of broad (#JavaScript, #WebDev) and niche (#ReactHooks, #MERNStack). Always include #MERNStack, #WebDevelopment, and #shorts.
 * One English visual keyword suitable for image/video search.
 
 Return ONLY valid JSON:
 {
 "script": "...",
 "caption": "...",
+"youtubeTitle": "...",
 "hashtags": ["#...", "#...", "#...", "#...", "#...", "#...", "#...", "#...", "#...", "#..."],
 "keyword": "..."
 }
