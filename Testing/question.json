@@ -161,7 +161,8 @@
   },
   {
     "id": 18,
-    "topic": "What is Scope?"
+    "topic": "What is Scope?",
+    "process": true
   },
   {
     "id": 19,
