@@ -176,7 +176,8 @@
   },
   {
     "id": 21,
-    "topic": "What is Temporal Dead Zone?"
+    "topic": "What is Temporal Dead Zone?",
+    "process": true
   },
   {
     "id": 22,
