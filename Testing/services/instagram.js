@@ -87,10 +87,28 @@ async function uploadToInstagram(videoPath, caption, thumbnailPath) {
         );
 
         const creationId = container.data.id;
-        console.log(`[IG] Container ID: ${creationId}. Waiting 60s for Meta processing...`);
+        console.log(`[IG] Container ID: ${creationId}. Polling Meta for processing status...`);
 
-        // 4. Wait for processing
-        await new Promise(r => setTimeout(r, 60000));
+        // 4. Wait for processing (Polling)
+        let status = 'IN_PROGRESS';
+        let retries = 0;
+        const maxRetries = 18; // 18 * 10 = 180 seconds
+
+        while (status === 'IN_PROGRESS' && retries < maxRetries) {
+            await new Promise(r => setTimeout(r, 10000));
+            try {
+                const statusRes = await axios.get(`https://graph.facebook.com/v25.0/${creationId}?fields=status_code&access_token=${ACCESS_TOKEN}`);
+                status = statusRes.data.status_code;
+                console.log(`[IG] Processing status: ${status}`);
+                if (status === 'ERROR') {
+                    throw new Error("Meta failed to process the video (ERROR status)");
+                }
+            } catch (err) {
+                if (err.message.includes("ERROR status")) throw err;
+                console.log(`[IG] Could not fetch status... waiting.`);
+            }
+            retries++;
+        }
 
         // 5. Publish the Reel
         console.log("[IG] Publishing reel...");
