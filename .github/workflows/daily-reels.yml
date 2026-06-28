@@ -57,4 +57,5 @@ jobs:
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add Testing/question.json
           git commit -m "chore: update processed topics in queue" || echo "No changes to commit"
+          git pull --rebase origin main
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
