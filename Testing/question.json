@@ -166,7 +166,8 @@
   },
   {
     "id": 19,
-    "topic": "Global Scope vs Local Scope"
+    "topic": "Global Scope vs Local Scope",
+    "process": true
   },
   {
     "id": 20,
