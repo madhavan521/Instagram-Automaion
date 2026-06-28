@@ -2,6 +2,7 @@ require('dotenv').config();
 const axios = require("axios");
 const fs = require("fs");
 const FormData = require("form-data");
+const { google } = require("googleapis");
 
 // Best practice: Use GitHub Secrets and access them via process.env
 // For example: process.env.ACCESS_TOKEN
@@ -73,6 +74,75 @@ async function publishInstagramReel(publicVideoUrl, caption) {
 }
 
 /**
+ * Publishes the video to YouTube
+ */
+async function publishYouTubeVideo(localFilePath, caption, thumbnailPath = null) {
+  try {
+    const YOUTUBE_CLIENT_ID = process.env.YOUTUBE_CLIENT_ID;
+    const YOUTUBE_CLIENT_SECRET = process.env.YOUTUBE_CLIENT_SECRET;
+    const YOUTUBE_REFRESH_TOKEN = process.env.YOUTUBE_REFRESH_TOKEN;
+
+    if (!YOUTUBE_CLIENT_ID || !YOUTUBE_CLIENT_SECRET || !YOUTUBE_REFRESH_TOKEN) {
+      console.log("[YT] Missing YouTube credentials. Skipping YouTube upload.");
+      return null;
+    }
+
+    console.log(`[YT] Uploading ${localFilePath} to YouTube...`);
+    const oauth2Client = new google.auth.OAuth2(YOUTUBE_CLIENT_ID, YOUTUBE_CLIENT_SECRET);
+    oauth2Client.setCredentials({ refresh_token: YOUTUBE_REFRESH_TOKEN });
+
+    const youtube = google.youtube({ version: 'v3', auth: oauth2Client });
+
+    // Use the first 50 chars of caption as title, or a default
+    let title = caption ? caption.split('\n')[0].substring(0, 50) : "Automated Upload";
+    if (caption && caption.includes('#shorts') && !title.includes('#shorts')) {
+      title += " #shorts";
+    }
+
+    const res = await youtube.videos.insert({
+      part: 'snippet,status',
+      requestBody: {
+        snippet: {
+          title: title,
+          description: caption,
+          tags: ['shorts', 'automation'],
+        },
+        status: {
+          privacyStatus: 'public', // Set to public as requested
+          selfDeclaredMadeForKids: false,
+        },
+      },
+      media: {
+        body: fs.createReadStream(localFilePath),
+      },
+    });
+
+    console.log(`[YT] Success! YouTube Video ID: ${res.data.id}`);
+
+    // Set custom thumbnail if provided
+    if (thumbnailPath && fs.existsSync(thumbnailPath)) {
+      try {
+        console.log(`[YT] Uploading custom thumbnail from ${thumbnailPath}...`);
+        await youtube.thumbnails.set({
+          videoId: res.data.id,
+          media: {
+            body: fs.createReadStream(thumbnailPath),
+          },
+        });
+        console.log(`[YT] Custom thumbnail set successfully!`);
+      } catch (thumbErr) {
+        console.error(`[YT] Warning: Failed to set custom thumbnail:`, thumbErr.message);
+      }
+    }
+
+    return res.data.id;
+  } catch (err) {
+    console.error("[YT] Failed to upload to YouTube:", err.message);
+    throw err;
+  }
+}
+
+/**
  * Main execution function
  */
 async function processAndUpload(localFilePath, caption) {
@@ -83,6 +153,12 @@ async function processAndUpload(localFilePath, caption) {
     // 2. Publish to Instagram
     const reelId = await publishInstagramReel(publicUrl, caption);
     console.log(`[Success] Reel published with ID: ${reelId}`);
+
+    // 3. Publish to YouTube
+    const ytId = await publishYouTubeVideo(localFilePath, caption);
+    if (ytId) {
+      console.log(`[Success] YouTube video published with ID: ${ytId}`);
+    }
 
   } catch (error) {
     console.error("[Error] Process failed:", error.response?.data || error.message);
@@ -116,4 +192,4 @@ if (require.main === module) {
   processAndUpload(targetFile, caption);
 }
 
-module.exports = { processAndUpload, uploadToCatbox, publishInstagramReel };
+module.exports = { processAndUpload, uploadToCatbox, publishInstagramReel, publishYouTubeVideo };

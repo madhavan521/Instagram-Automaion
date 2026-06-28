@@ -3,6 +3,7 @@ const { generateVoice } = require('./services/voice');
 const { generateSRT } = require('./services/subtitles');
 const { renderVideo, generateThumbnail } = require('./services/video');
 const { uploadToInstagram, editLatestPostCaption } = require('./services/instagram');
+const { publishYouTubeVideo } = require('./services/youtube');
 const fs = require('fs-extra');
 const path = require('path');
 const { Telegram } = require('telegraf');
@@ -83,8 +84,20 @@ async function runCron() {
             await notifyUser(`📸 Uploading to Instagram Reels...\n\nCaption preview:\n${fullCaption.substring(0, 100)}...`);
             await uploadToInstagram(finalVideoPath, fullCaption, thumbnailPath);
             await notifyUser(`✅ Successfully posted on Instagram!\n🎯 Topic: ${prompt}`);
+
+            // Also post to YouTube!
+            try {
+                await notifyUser(`🎥 Uploading to YouTube Shorts...`);
+                const ytId = await publishYouTubeVideo(finalVideoPath, fullCaption, thumbnailPath);
+                if (ytId) {
+                    await notifyUser(`✅ Successfully posted on YouTube! Video ID: ${ytId}`);
+                }
+            } catch (ytError) {
+                await notifyUser(`⚠️ Failed to post on YouTube: ${ytError.message}`);
+            }
+
         } else {
-            await notifyUser('⚠️ Skipping Instagram upload: IG_ACCESS_TOKEN not set.');
+            await notifyUser('⚠️ Skipping uploads: IG_ACCESS_TOKEN not set.');
         }
 
     } catch (error) {
