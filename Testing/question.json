@@ -186,7 +186,8 @@
   },
   {
     "id": 23,
-    "topic": "What is Lexical Scope?"
+    "topic": "What is Lexical Scope?",
+    "process": true
   },
   {
     "id": 24,
