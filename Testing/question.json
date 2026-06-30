@@ -201,7 +201,8 @@
   },
   {
     "id": 26,
-    "topic": "What is Promise?"
+    "topic": "What is Promise?",
+    "process": true
   },
   {
     "id": 27,
