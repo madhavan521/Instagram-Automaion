@@ -211,7 +211,8 @@
   },
   {
     "id": 28,
-    "topic": "Promise.all vs Promise.allSettled"
+    "topic": "Promise.all vs Promise.allSettled",
+    "process": true
   },
   {
     "id": 29,
