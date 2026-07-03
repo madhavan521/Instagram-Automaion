@@ -251,7 +251,8 @@
   },
   {
     "id": 36,
-    "topic": "What is Currying?"
+    "topic": "What is Currying?",
+    "process": true
   },
   {
     "id": 37,
