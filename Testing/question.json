@@ -266,7 +266,8 @@
   },
   {
     "id": 39,
-    "topic": "What is Prototype Chain?"
+    "topic": "What is Prototype Chain?",
+    "process": true
   },
   {
     "id": 40,
