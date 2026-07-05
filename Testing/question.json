@@ -276,7 +276,8 @@
   },
   {
     "id": 41,
-    "topic": "call vs apply vs bind"
+    "topic": "call vs apply vs bind",
+    "process": true
   },
   {
     "id": 42,
