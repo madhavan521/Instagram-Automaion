@@ -281,7 +281,8 @@
   },
   {
     "id": 42,
-    "topic": "What is Destructuring?"
+    "topic": "What is Destructuring?",
+    "process": true
   },
   {
     "id": 43,
