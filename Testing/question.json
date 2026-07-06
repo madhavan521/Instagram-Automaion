@@ -286,7 +286,8 @@
   },
   {
     "id": 43,
-    "topic": "What is Spread Operator?"
+    "topic": "What is Spread Operator?",
+    "process": true
   },
   {
     "id": 44,
