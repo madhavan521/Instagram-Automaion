@@ -6,26 +6,43 @@ const FormData = require('form-data');
  * Uploads a local file to Catbox.moe to get a public URL for Meta
  */
 async function uploadToFileHost(localFilePath) {
-    // --- Attempt 1: Catbox.moe ---
+    // --- Attempt 1: Uguu.se ---
     try {
-        console.log(`[Upload] Trying Catbox.moe...`);
+        console.log(`[Upload] Trying uguu.se...`);
         const form = new FormData();
-        form.append("reqtype", "fileupload");
-        form.append("fileToUpload", fs.createReadStream(localFilePath));
-        const response = await axios.post("https://catbox.moe/user/api.php", form, {
+        form.append("files[]", fs.createReadStream(localFilePath));
+        const response = await axios.post("https://uguu.se/upload.php", form, {
             headers: form.getHeaders(),
             maxContentLength: Infinity,
             maxBodyLength: Infinity,
         });
-        const url = response.data?.trim();
-        if (!url || !url.startsWith("http")) throw new Error("Invalid URL from Catbox");
-        console.log(`[Upload] Catbox URL: ${url}`);
+        const url = response.data?.files?.[0]?.url;
+        if (!url || !url.startsWith("http")) throw new Error("Invalid URL from uguu.se");
+        console.log(`[Upload] uguu.se URL: ${url}`);
         return url;
     } catch (err) {
-        console.warn(`[Upload] Catbox.moe failed: ${err.message}. Trying 0x0.st...`);
+        console.warn(`[Upload] uguu.se failed: ${err.message}. Trying pomf.lain.la...`);
     }
 
-    // --- Attempt 2: 0x0.st ---
+    // --- Attempt 2: Pomf.lain.la ---
+    try {
+        console.log(`[Upload] Trying pomf.lain.la...`);
+        const form = new FormData();
+        form.append("files[]", fs.createReadStream(localFilePath));
+        const response = await axios.post("https://pomf.lain.la/upload.php", form, {
+            headers: form.getHeaders(),
+            maxContentLength: Infinity,
+            maxBodyLength: Infinity,
+        });
+        const url = response.data?.files?.[0]?.url;
+        if (!url || !url.startsWith("http")) throw new Error("Invalid URL from pomf.lain.la");
+        console.log(`[Upload] pomf.lain.la URL: ${url}`);
+        return url;
+    } catch (err) {
+        console.warn(`[Upload] pomf.lain.la failed: ${err.message}. Trying 0x0.st...`);
+    }
+
+    // --- Attempt 3: 0x0.st ---
     try {
         console.log(`[Upload] Trying 0x0.st...`);
         const form = new FormData();
