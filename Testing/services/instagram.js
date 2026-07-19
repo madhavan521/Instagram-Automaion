@@ -6,27 +6,28 @@ const FormData = require('form-data');
  * Uploads a local file to Catbox.moe to get a public URL for Meta
  */
 async function uploadToFileHost(localFilePath) {
-    // --- Attempt 1: tmpfiles.org ---
+    // --- Attempt 1: Catbox.moe ---
     try {
-        console.log(`[Upload] Trying tmpfiles.org...`);
+        console.log(`[Upload] Trying Catbox.moe...`);
         const form = new FormData();
-        form.append("file", fs.createReadStream(localFilePath));
-        const response = await axios.post("https://tmpfiles.org/api/v1/upload", form, {
+        form.append("reqtype", "fileupload");
+        form.append("fileToUpload", fs.createReadStream(localFilePath));
+        const response = await axios.post("https://catbox.moe/user/api.php", form, {
             headers: form.getHeaders(),
             maxContentLength: Infinity,
             maxBodyLength: Infinity,
         });
-        const pageUrl = response.data?.data?.url;
-        if (!pageUrl) throw new Error("No URL in tmpfiles.org response");
-        const directUrl = pageUrl.replace("tmpfiles.org/", "tmpfiles.org/dl/");
-        console.log(`[Upload] tmpfiles.org URL: ${directUrl}`);
-        return directUrl;
+        const url = response.data?.trim();
+        if (!url || !url.startsWith("http")) throw new Error("Invalid URL from Catbox");
+        console.log(`[Upload] Catbox URL: ${url}`);
+        return url;
     } catch (err) {
-        console.warn(`[Upload] tmpfiles.org failed: ${err.message}. Trying 0x0.st...`);
+        console.warn(`[Upload] Catbox.moe failed: ${err.message}. Trying 0x0.st...`);
     }
 
     // --- Attempt 2: 0x0.st ---
     try {
+        console.log(`[Upload] Trying 0x0.st...`);
         const form = new FormData();
         form.append("file", fs.createReadStream(localFilePath));
         const response = await axios.post("https://0x0.st", form, {
