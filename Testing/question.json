@@ -341,7 +341,8 @@
   },
   {
     "id": 54,
-    "topic": "What is Strict Mode?"
+    "topic": "What is Strict Mode?",
+    "process": true
   },
   {
     "id": 55,
