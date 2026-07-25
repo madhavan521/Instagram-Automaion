@@ -411,7 +411,8 @@
   },
   {
     "id": 68,
-    "topic": "What is Virtual DOM?"
+    "topic": "What is Virtual DOM?",
+    "process": true
   },
   {
     "id": 69,
