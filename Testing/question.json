@@ -471,7 +471,8 @@
   },
   {
     "id": 80,
-    "topic": "What is Redux?"
+    "topic": "What is Redux?",
+    "process": true
   },
   {
     "id": 81,
