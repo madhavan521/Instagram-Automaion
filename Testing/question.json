@@ -476,7 +476,8 @@
   },
   {
     "id": 81,
-    "topic": "What is Redux Toolkit?"
+    "topic": "What is Redux Toolkit?",
+    "process": true
   },
   {
     "id": 82,
