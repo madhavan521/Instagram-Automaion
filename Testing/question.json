@@ -546,7 +546,8 @@
   },
   {
     "id": 95,
-    "topic": "What is Lifting State Up?"
+    "topic": "What is Lifting State Up?",
+    "process": true
   },
   {
     "id": 96,
