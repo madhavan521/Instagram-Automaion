@@ -606,7 +606,8 @@
   },
   {
     "id": 107,
-    "topic": "What is Incremental Static Regeneration (ISR)?"
+    "topic": "What is Incremental Static Regeneration (ISR)?",
+    "process": true
   },
   {
     "id": 108,
