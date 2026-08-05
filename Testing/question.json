@@ -601,7 +601,8 @@
   },
   {
     "id": 106,
-    "topic": "What is Static Site Generation (SSG)?"
+    "topic": "What is Static Site Generation (SSG)?",
+    "process": true
   },
   {
     "id": 107,
