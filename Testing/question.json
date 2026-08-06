@@ -626,7 +626,8 @@
   },
   {
     "id": 111,
-    "topic": "Compound Components Pattern"
+    "topic": "Compound Components Pattern",
+    "process": true
   },
   {
     "id": 112,
