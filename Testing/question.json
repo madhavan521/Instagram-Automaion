@@ -616,7 +616,8 @@
   },
   {
     "id": 109,
-    "topic": "Higher Order Components (HOC)"
+    "topic": "Higher Order Components (HOC)",
+    "process": true
   },
   {
     "id": 110,
