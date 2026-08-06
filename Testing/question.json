@@ -611,7 +611,8 @@
   },
   {
     "id": 108,
-    "topic": "React Design Patterns"
+    "topic": "React Design Patterns",
+    "process": true
   },
   {
     "id": 109,
