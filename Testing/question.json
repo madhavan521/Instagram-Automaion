@@ -621,7 +621,8 @@
   },
   {
     "id": 110,
-    "topic": "Render Props Pattern"
+    "topic": "Render Props Pattern",
+    "process": true
   },
   {
     "id": 111,
