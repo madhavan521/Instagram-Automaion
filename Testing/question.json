@@ -666,7 +666,8 @@
   },
   {
     "id": 119,
-    "topic": "Redux Thunk"
+    "topic": "Redux Thunk",
+    "process": true
   },
   {
     "id": 120,
